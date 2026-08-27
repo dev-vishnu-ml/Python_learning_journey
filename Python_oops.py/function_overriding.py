@@ -1,22 +1,13 @@
 # basically two type of polymorphism in python 1.function overriding 2.Duck Typing
-class Dog:
-    def speak(self):
-        print("bark")
+# 1.function overriding
 
-class Cow:
-    def speak(self):
-        print("Moo!")
+class Employee:
+    def get_designation(self):
+        print("designation  = Empoyee")
 
-class Robot:
-    def speak(self):
-        print("Beep Boop")
+class Teacher(Employee):
+    def get_designation(self): #function overriding
+        print("designation = Teacher ")
 
-def make_it_speak(entity):
-    entity.speak()
-
-d = Dog()
-c = Cow()
-r = Robot()
-
-for i in [d,c,r]:
-    make_it_speak(i)
+teacher = Teacher()
+teacher.get_designation()
