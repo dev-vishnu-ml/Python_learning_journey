@@ -18,5 +18,5 @@ d = Dog()
 c = Cow()
 r = Robot()
 
-for e in [d,c,r]:
-    make_it_speak(e)
+for i in [d,c,r]:
+    make_it_speak(i)
